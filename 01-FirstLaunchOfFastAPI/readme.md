@@ -48,4 +48,4 @@ def ...
 Параметр hotel_id передаётся через ТЕЛО запроса (метод Body).
 
 
-**Подробнее в файле "[main.py](https://github.com/shilyas-ru/FastAPI_AS/blob/main/01-FirstLaunchOfFastAPI/main.py)")**
+**Подробнее в файле "[main.py](https://github.com/shilyas-ru/FastAPI_AS/blob/main/01-FirstLaunchOfFastAPI/main.py)"**
