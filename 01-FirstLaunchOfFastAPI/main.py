@@ -169,6 +169,9 @@ def get_hotel(hotel_id: int | None = Query(None, description="Айдишник")
     # То тогда будет результат в виде списка.
     found_hotel = []
     for hotel in hotels:
+        # Конструкция "if hotel_id and" - позволяет отсечь варианты, когда параметр не задан.
+        # Если её не использовать, то всегда будет выполняться условие hotel["id"] != hotel_id,
+        # и цикл будет переходить к следующей итерации, игнорируя проверку со вторым параметром.
         if hotel_id and hotel["id"] != hotel_id:
             continue
         if hotel_title and hotel["title"] != hotel_title:
