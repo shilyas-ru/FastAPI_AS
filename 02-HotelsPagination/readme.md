@@ -15,7 +15,7 @@
 
 ## Что сделано
 
-- К реализации в задании №1 (см. папку " [01-FirstLaunchOfFastAPI](https://github.com/shilyas-ru/FastAPI_AS/tree/main/01-FirstLaunchOfFastAPI) " ) добавлена пагинация: возможность вывода всего списка отелей сразу или вывод отелей с разбивкой по страницам.</li>
+- К реализации в задании №1 (см. папку "[01-FirstLaunchOfFastAPI](https://github.com/shilyas-ru/FastAPI_AS/tree/main/01-FirstLaunchOfFastAPI)") добавлена пагинация: возможность вывода всего списка отелей сразу или вывод отелей с разбивкой по страницам.</li>
 - Обработка маршрутов, связанных с отелями, из файла "[main.py](https://github.com/shilyas-ru/FastAPI_AS/blob/main/01-FirstLaunchOfFastAPI/main.py)" перенесена в файл "[Routers_FastAPI/hotels.py](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02-HotelsPagination/Routers_FastAPI/hotels.py)". В результате в итоговом файле "[main.py](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02-HotelsPagination/main.py)" осталось только обращение к роутеру.
 
 
