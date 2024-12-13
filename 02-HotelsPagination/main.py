@@ -5,7 +5,9 @@ from fastapi import FastAPI
 # В нём не используются схемы пи
 # from Routers_FastAPI.hotels_full_file import router as router_hotels
 # Следующая строка использует файл Routers_FastAPI/hotels_schemas.py
-from Routers_FastAPI.hotels_schemas import router as router_hotels
+# from Routers_FastAPI.hotels_schemas import router as router_hotels
+# Следующая строка использует файл Routers_FastAPI/hotels_schemas_examples.py
+from Routers_FastAPI.hotels_schemas_examples import router as router_hotels
 
 """
 ## Задание №2: Пагинация для отелей
