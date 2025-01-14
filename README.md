@@ -6,9 +6,9 @@
 ## Уведомление
 1. Код учебный, то есть, содержит все комментарии, которые я пишу сам для себя. Комментариев для стороннего человека может быть много.
 2. Итоговый проект будет очищен от всех сторонних комментариев и "лишнего", то есть, учебного, кода. Ссылка будет тут, когда проект доведу до итогового кода.
-3. Перед запуском проекта требуется:
-    - Установить пакеты, указанные в файле "[requirements.txt](https://github.com/shilyas-ru/FastAPI_AS/tree/main/06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/requirements.txt)".
-    - Начиная с "Задания №3: Миграция для номеров" (папка "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations](https://github.com/shilyas-ru/FastAPI_AS/tree/main/03-PostgreSQL-SQLAlchemy-Models_and_Migrations)") требуется создать в корне проекта файл ".env" и заполнить значения, указанные в файле ".env":
+3. Перед запуском проекта требуется установить пакеты, указанные в файле "requirements.txt", расположенного в соответствующей папке.
+4. Начиная с "Задания №3: Миграция для номеров" (папка "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations](https://github.com/shilyas-ru/FastAPI_AS/tree/main/03-PostgreSQL-SQLAlchemy-Models_and_Migrations)") требуется создать в корне проекта файл ".env" и заполнить значения, указанные в файле ".env":
+
 ```
 DB_HOST=
 DB_PORT=
@@ -17,6 +17,19 @@ DB_PASS=
 DB_NAME=
 ```
 
+5. Начиная с "Задания №9: "Получение cookie пользователя внутри ручки" (папка "[10-User_authorization_and_authentication-Receiving_user_cookies](https://github.com/shilyas-ru/FastAPI_AS/tree/main/10-User_authorization_and_authentication-Receiving_user_cookies)") требуется создать в корне проекта файл ".env" и заполнить значения, указанные в файле ".env":
+
+```
+DB_HOST=
+DB_PORT=
+DB_USER=
+DB_PASS=
+DB_NAME=
+
+JWT_SECRET_KEY=
+JWT_ALGORITHM=
+ACCESS_TOKEN_EXPIRE_MINUTES=
+```
 
 
 ## Задание №1: PUT и PATCH ручки отелей
