@@ -44,29 +44,34 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 
 
 ## Задание №2: Пагинация для отелей
-Описание в файле "[02-HotelsPagination/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02-HotelsPagination/readme.md)":
-- Папка "[02_1-HotelsPagination](https://github.com/shilyas-ru/FastAPI_AS/tree/main/02_1-HotelsPagination)". Выполненное задание. Подробное описание в файле "[02_1-HotelsPagination/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02_1-HotelsPagination/readme.md)".
-- Папка "[02_2-HotelsDependencies](https://github.com/shilyas-ru/FastAPI_AS/tree/main/02_2-HotelsDependencies)". добавлены зависимости для настройки пагинации (сделано на основании предложенного решения в лекции): файл "[dependencies.py](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02_1-HotelsPagination/dependencies.py)".
-
 Необходимо реализовать пагинацию для отелей.
 
 Для этого необходимо добавить 2 query параметра page и per_page, оба параметра являются необязательными. Если пользователь не передает page, то используется значение по умолчанию 1 (то есть первая страница). Для per_page ситуация аналогичная — если параметр не передается, то используется значение по умолчанию 3 (можете выбрать любое другое). 
 
-Код моего решения размещён в папке "[02_1-HotelsPagination](https://github.com/shilyas-ru/FastAPI_AS/tree/main/02_1-HotelsPagination)"
+
+Структура папок:
+- Выполненное задание.
+    - Папка "[02-HotelsPagination/02_1-HotelsPagination](https://github.com/shilyas-ru/FastAPI_AS/tree/main/02-HotelsPagination/02_1-HotelsPagination)".
+    - Подробное описание в файле "[02-HotelsPagination/02_1-HotelsPagination/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02-HotelsPagination/02_1-HotelsPagination/readme.md)".
+- Добавлены зависимости для настройки пагинации (сделано на основании предложенного решения в лекции).
+    - Папка "[02-HotelsPagination/02_2-HotelsDependencies](https://github.com/shilyas-ru/FastAPI_AS/tree/main/02-HotelsPagination/02_2-HotelsDependencies)".
+    - Подробное описание в файле "[02-HotelsPagination/02_2-HotelsDependencies/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02-HotelsPagination/02_2-HotelsDependencies/readme.md)".
+    - Добавлен файл "[dependencies.py](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02-HotelsPagination/02_2-HotelsDependencies/dependencies.py)".
+
+
+Код моего решения размещён в папке "[02-HotelsPagination/02_1-HotelsPagination](https://github.com/shilyas-ru/FastAPI_AS/tree/main/02-HotelsPagination/02_1-HotelsPagination)".
 
 
 
 ## Задание №3: Миграция для номеров
 
-### Внимание!!!
+*Внимание!!!*
 
-Ссылка на гитхаб, заявленная в ответе для задания №3 "Миграция для номеров":
+- Ссылка на гитхаб, заявленная в ответе для задания №3 "Миграция для номеров":
 `https://github.com/shilyas-ru/FastAPI_AS/tree/main/03-PostgreSQL-SQLAlchemy/Models_and_Migrations`.
 
-Потом проект из папки `03-PostgreSQL-SQLAlchemy/Models_and_Migrations` был перенесён в папку `03-PostgreSQL-SQLAlchemy-Models_and_Migrations`.
+- Потом проект из папки `03-PostgreSQL-SQLAlchemy/Models_and_Migrations` был перенесён в папку `03-PostgreSQL-SQLAlchemy-Models_and_Migrations`.
 
-
-Подробное описание в файле "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/03-PostgreSQL-SQLAlchemy-Models_and_Migrations/readme.md)"
 
 Необходимо создать миграцию (в Alembic они называются ревизии/revisions) 
 через терминал ровно так же, как мы делали это в уроке.
@@ -74,36 +79,28 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 После создания миграцию необходимо прогнать (запустить/применить), чтобы 
 в базе данных появилась таблица rooms.
 
-В файле "[ReadMe.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/03-PostgreSQL-SQLAlchemy-Models_and_Migrations/src/models/ReadMe.md)" краткая справка по командам alembic
+
+Подробное описание в файле "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/03-PostgreSQL-SQLAlchemy-Models_and_Migrations/readme.md)"
 
 Код размещён в папке "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations](https://github.com/shilyas-ru/FastAPI_AS/tree/main/03-PostgreSQL-SQLAlchemy-Models_and_Migrations)"
-
-Созданные таблицы в базе данных можно посмотреть на картинке "[tables_in_database.png](https://github.com/shilyas-ru/FastAPI_AS/blob/main/03-PostgreSQL-SQLAlchemy-Models_and_Migrations/tables_in_database.png)".
 
 
 
 ## Задание №4: Фильтрация по подстроке
-Подробное описание в файле "[04-PostgreSQL-SQLAlchemy-Filtering_by_substring/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/04-PostgreSQL-SQLAlchemy-Filtering_by_substring/readme.md)"
-
 Необходимо изменить запрос на выборку отелей таким образом, чтобы
 1. Поиск не производился по полю id (необходимо убрать id из query параметров).
 2. Поиск производился по полям location и title. Причем оба поля необязательны.
 3. Поиск по полям location и title должен осуществляться не по полному совпадению, 
 а по вхождению вводимого пользователем значения в соответствующие столбцы таблицы.
 
-В файле "[ReadMe.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/04-PostgreSQL-SQLAlchemy-Filtering_by_substring/src/models/ReadMe.md)" краткая справка по командам alembic
 
-В файле "[project_structure.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/04-PostgreSQL-SQLAlchemy-Filtering_by_substring/src/models/project_structure.md)" описана структура проекта.
-
-- Созданные таблицы в базе данных можно посмотреть на картинке "[tables_in_database.png](https://github.com/shilyas-ru/FastAPI_AS/blob/main/04-PostgreSQL-SQLAlchemy-Filtering_by_substring/tables_in_database.png)".
+Подробное описание в файле "[04-PostgreSQL-SQLAlchemy-Filtering_by_substring/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/04-PostgreSQL-SQLAlchemy-Filtering_by_substring/readme.md)"
 
 Код размещён в папке "[04-PostgreSQL-SQLAlchemy-Filtering_by_substring](https://github.com/shilyas-ru/FastAPI_AS/tree/main/04-PostgreSQL-SQLAlchemy-Filtering_by_substring)"
 
 
 
 ## Задание №5: Вставка данных через репозиторий
-Подробное описание в файле "[05-PostgreSQL-SQLAlchemy-Repository-Inserting_data/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/05-PostgreSQL-SQLAlchemy-Repository-Inserting_data/readme.md)"
-
 Необходимо добавить в BaseRepository метод add, который будет
 - принимать данные для вставки
 - отдавать записанные в базу данных данные в формате модели SQLAlchemy
@@ -114,13 +111,14 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 ```
 где hotel — модель Алхимии, которую вернул репозиторий.
 
+
+Подробное описание в файле "[05-PostgreSQL-SQLAlchemy-Repository-Inserting_data/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/05-PostgreSQL-SQLAlchemy-Repository-Inserting_data/readme.md)"
+
 Код размещён в папке "[05-PostgreSQL-SQLAlchemy-Repository-Inserting_data](https://github.com/shilyas-ru/FastAPI_AS/tree/main/05-PostgreSQL-SQLAlchemy-Repository-Inserting_data)"
 
 
 
 ## Задание №6: Обновление и удаление данных через репозиторий
-Подробное описание в файле "[06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/readme.md)"
-
 
 Необходимо создать 2 метода внутри BaseRepository по заданным сигнатурам (см. [скриншот](https://github.com/shilyas-ru/FastAPI_AS/blob/main/06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/Screenshot_at_Aug_28_23-35-20.png)), а также переписать ручки PUT и DELETE.
 
@@ -148,14 +146,20 @@ async def delete(self, **filter_by) -> None:
     ...
 ```
 
+
+Подробное описание в файле "[06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/readme.md)"
+
+
 Код размещён в папке "[06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data](https://github.com/shilyas-ru/FastAPI_AS/tree/main/06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data)"
 
 
 
 ## Задание №7: Ручка на получение отеля
-Подробное описание в файле "[07-PostgreSQL-SQLAlchemy-Repository-Getting_data/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/07-PostgreSQL-SQLAlchemy-Repository-Getting_data/readme.md)"
 
 Необходимо создать ручку для получения конкретного отеля `GET /hotels/{hotel_id}`, которая будет вызывать соответствующий метод репозитория и отдавать в ответе данные отеля.
+
+
+Подробное описание в файле "[07-PostgreSQL-SQLAlchemy-Repository-Getting_data/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/07-PostgreSQL-SQLAlchemy-Repository-Getting_data/readme.md)"
 
 Код размещён в папке "[07-PostgreSQL-SQLAlchemy-Repository-Getting_data](https://github.com/shilyas-ru/FastAPI_AS/tree/main/07-PostgreSQL-SQLAlchemy-Repository-Getting_data)"
 
@@ -272,4 +276,3 @@ delete("/hotels/{hotel_id}") - Delete Hotel
 
 
 Код размещён в папке "[12-Database-Rooms_functionality](https://github.com/shilyas-ru/FastAPI_AS/tree/main/12-Database-Rooms_functionality)"
-
