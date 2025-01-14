@@ -61,7 +61,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 
 - Добавлено:
     - В базовом репозитории BaseRepositoryMyCode добавлен метод delete_id. Метод класса. Выбирает по идентификатору 
-      (по первичному ключу) - поле self.model.id один объект в базе, используя метод get, удаляет методом session.delete.
+      (по первичному ключу) - поле self.model.id один объект в базе, используя метод get, удаляет методом session.delete.<br>
       Используются методы:
         - session.get(RoomsORM, object_id) для получения объекта по ключу
         - session.delete(room_object) для удаления объекта room_object.
@@ -80,10 +80,10 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 - delete("/hotels/rooms/{room_id}") - Удаление выбранной записи по 
         идентификатору номера.
         Реализовано удаление одного объекта, когда объект для удаления получаем 
-        по первичному ключу (метод session.get), удаляем методом session.delete.
+        по первичному ключу (метод session.get), удаляем методом session.delete.<br>
         Используются методы:
-        - session.get(RoomsORM, id) для получения объекта по ключу
-        - session.delete(room_object) для удаления объекта room_object.
+    - session.get(RoomsORM, id) для получения объекта по ключу
+    - session.delete(room_object) для удаления объекта room_object.
 - delete("/hotels/rooms/") - Удаление выбранной записи по 
         идентификатору номера.
         При желании можно дополнить удаление по любым условиям, а не только по id.
