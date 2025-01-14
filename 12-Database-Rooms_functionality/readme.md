@@ -22,7 +22,7 @@
 
 
 ***Скриншот:***<br>
-<img src="https://github.com/shilyas-ru/FastAPI_AS/blob/main/12-Database-Rooms_functionality/Screenshot_at_Aug_29_01-19-03.png" alt="скриншот" height="135">
+<img src="https://github.com/shilyas-ru/FastAPI_AS/blob/main/12-Database-Rooms_functionality/Screenshot_at_Aug_29_01-19-03.png" alt="скриншот" height="270">
 
 
 *Код со [скриншота](https://github.com/shilyas-ru/FastAPI_AS/blob/main/12-Database-Rooms_functionality/Screenshot_at_Aug_29_01-19-03.png):*
