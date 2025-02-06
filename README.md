@@ -276,3 +276,60 @@ delete("/hotels/{hotel_id}") - Delete Hotel
 
 
 Код размещён в папке "[12-Database-Rooms_functionality](https://github.com/shilyas-ru/FastAPI_AS/tree/main/12-Database-Rooms_functionality)"
+
+
+
+## Задание № 12: Ручка для добавления бронирования
+Необходимо создать API ручку POST /bookings для добавления бронирования.
+
+Принимаемые данные:
+- date_from — дата заезда (только дата, без времени)
+- date_to — дата выезда (только дата, без времени)
+- room_id — id номера
+
+
+Перед добавлением бронирования необходимо взять актуальную цену 
+номера из таблицы rooms (поле price).
+
+Напомню, что это задание предполагает создание новых:
+- роутера и ручки
+- pydantic схем
+- репозитория
+    
+Конкретизировано в видео:
+
+Не принимаем цену, потому что будем считать её на 
+бэкэнде (получаем на уровне базы данных).
+Не принимаем user_id, потому что будем получать его из 
+авторизационных данных, из токена из куки.
+
+И затем уже перегонять данные в другую pydantic-схему.
+
+
+Подробное описание в файле "[13-Database-Rooms_functionality-Adding_booking_room/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/13-Database-Rooms_functionality-Adding_booking_room/readme.md)"
+
+
+Код размещён в папке "[13-Database-Rooms_functionality-Adding_booking_room](https://github.com/shilyas-ru/FastAPI_AS/tree/main/13-Database-Rooms_functionality-Adding_booking_room)"
+
+
+
+## Задание № 13: Ручки на получение бронирований
+Необходимо создать две ручки на получение бронирований:
+
+- Получение всех бронирований /bookings
+- Получение только своих бронирований /bookings/me
+
+
+Код размещён в папке "[14-Database-Rooms_functionality-Getting_booking_room](https://github.com/shilyas-ru/FastAPI_AS/tree/main/14-Database-Rooms_functionality-Getting_booking_room)"
+
+
+
+## Задание № 14: Вернуть пагинацию и фильтрацию в получение отелей
+Необходимо добавить фильтрацию и пагинацию в метод get_filtered_by_time 
+в HotelsRepository и в API ручку /hotels. 
+
+Метод get_all в HotelsRepository необходимо удалить.
+
+
+Код размещён в папке "[15-Database-Rooms_functionality-Raw_SQL_queries](https://github.com/shilyas-ru/FastAPI_AS/tree/main/15-Database-Rooms_functionality-Raw_SQL_queries)"
+
