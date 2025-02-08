@@ -7,7 +7,7 @@
 1. Код учебный, то есть, содержит все комментарии, которые я пишу сам для себя. Комментариев для стороннего человека может быть много.
 2. Итоговый проект будет очищен от всех сторонних комментариев и "лишнего", то есть, учебного, кода. Ссылка будет тут, когда проект доведу до итогового кода.
 3. Перед запуском проекта требуется установить пакеты, указанные в файле "requirements.txt", расположенного в соответствующей папке.
-4. Начиная с "Задания №3: Миграция для номеров" (папка "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations](https://github.com/shilyas-ru/FastAPI_AS/tree/main/03-PostgreSQL-SQLAlchemy-Models_and_Migrations)") требуется создать в корне проекта файл ".env" и заполнить значения, указанные в файле ".env":
+4. Начиная с "Задания №3: Миграция для номеров" (папка "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations](03-PostgreSQL-SQLAlchemy-Models_and_Migrations)") требуется создать в корне проекта файл ".env" и заполнить значения, указанные в файле ".env":
 
 ```
 DB_HOST=
@@ -17,7 +17,7 @@ DB_PASS=
 DB_NAME=
 ```
 
-5. Начиная с "Задания №9: "Получение cookie пользователя внутри ручки" (папка "[10-User_authorization_and_authentication-Receiving_user_cookies](https://github.com/shilyas-ru/FastAPI_AS/tree/main/10-User_authorization_and_authentication-Receiving_user_cookies)") требуется создать в корне проекта файл ".env" и заполнить значения, указанные в файле ".env":
+5. Начиная с "Задания №9: "Получение cookie пользователя внутри ручки" (папка "[10-User_authorization_and_authentication-Receiving_user_cookies](10-User_authorization_and_authentication-Receiving_user_cookies)") требуется создать в корне проекта файл ".env" и заполнить значения, указанные в файле ".env":
 
 ```
 DB_HOST=
@@ -33,13 +33,13 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 
 
 ## Задание №1: PUT и PATCH ручки отелей
-Подробное описание в файле "[01-FirstLaunchOfFastAPI/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/01-FirstLaunchOfFastAPI/readme.md)"
+Подробное описание в файле "[01-FirstLaunchOfFastAPI/readme.md](01-FirstLaunchOfFastAPI/readme.md)"
 
 Необходимо реализовать 2 ручки:
 - Ручка PUT на изменение отеля
 - Ручка PATCH на изменения отеля
 
-Код размещён в папке "[01-FirstLaunchOfFastAPI](https://github.com/shilyas-ru/FastAPI_AS/tree/main/01-FirstLaunchOfFastAPI)"
+Код размещён в папке "[01-FirstLaunchOfFastAPI](01-FirstLaunchOfFastAPI)"
 
 
 
@@ -51,15 +51,15 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 
 Структура папок:
 - Выполненное задание.
-    - Папка "[02-HotelsPagination/02_1-HotelsPagination](https://github.com/shilyas-ru/FastAPI_AS/tree/main/02-HotelsPagination/02_1-HotelsPagination)".
-    - Подробное описание в файле "[02-HotelsPagination/02_1-HotelsPagination/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02-HotelsPagination/02_1-HotelsPagination/readme.md)".
+    - Папка "[02-HotelsPagination/02_1-HotelsPagination](02-HotelsPagination/02_1-HotelsPagination)".
+    - Подробное описание в файле "[02-HotelsPagination/02_1-HotelsPagination/readme.md](02-HotelsPagination/02_1-HotelsPagination/readme.md)".
 - Добавлены зависимости для настройки пагинации (сделано на основании предложенного решения в лекции).
-    - Папка "[02-HotelsPagination/02_2-HotelsDependencies](https://github.com/shilyas-ru/FastAPI_AS/tree/main/02-HotelsPagination/02_2-HotelsDependencies)".
-    - Подробное описание в файле "[02-HotelsPagination/02_2-HotelsDependencies/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02-HotelsPagination/02_2-HotelsDependencies/readme.md)".
-    - Добавлен файл "[dependencies.py](https://github.com/shilyas-ru/FastAPI_AS/blob/main/02-HotelsPagination/02_2-HotelsDependencies/dependencies.py)".
+    - Папка "[02-HotelsPagination/02_2-HotelsDependencies](02-HotelsPagination/02_2-HotelsDependencies)".
+    - Подробное описание в файле "[02-HotelsPagination/02_2-HotelsDependencies/readme.md](02-HotelsPagination/02_2-HotelsDependencies/readme.md)".
+    - Добавлен файл "[dependencies.py](02-HotelsPagination/02_2-HotelsDependencies/dependencies.py)".
 
 
-Код моего решения размещён в папке "[02-HotelsPagination/02_1-HotelsPagination](https://github.com/shilyas-ru/FastAPI_AS/tree/main/02-HotelsPagination/02_1-HotelsPagination)".
+Код моего решения размещён в папке "[02-HotelsPagination/02_1-HotelsPagination](02-HotelsPagination/02_1-HotelsPagination)".
 
 
 
@@ -68,7 +68,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 *Внимание!!!*
 
 - Ссылка на гитхаб, заявленная в ответе для задания №3 "Миграция для номеров":
-`https://github.com/shilyas-ru/FastAPI_AS/tree/main/03-PostgreSQL-SQLAlchemy/Models_and_Migrations`.
+`03-PostgreSQL-SQLAlchemy/Models_and_Migrations`.
 
 - Потом проект из папки `03-PostgreSQL-SQLAlchemy/Models_and_Migrations` был перенесён в папку `03-PostgreSQL-SQLAlchemy-Models_and_Migrations`.
 
@@ -80,9 +80,9 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 в базе данных появилась таблица rooms.
 
 
-Подробное описание в файле "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/03-PostgreSQL-SQLAlchemy-Models_and_Migrations/readme.md)"
+Подробное описание в файле "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations/readme.md](03-PostgreSQL-SQLAlchemy-Models_and_Migrations/readme.md)"
 
-Код размещён в папке "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations](https://github.com/shilyas-ru/FastAPI_AS/tree/main/03-PostgreSQL-SQLAlchemy-Models_and_Migrations)"
+Код размещён в папке "[03-PostgreSQL-SQLAlchemy-Models_and_Migrations](03-PostgreSQL-SQLAlchemy-Models_and_Migrations)"
 
 
 
@@ -94,9 +94,9 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 а по вхождению вводимого пользователем значения в соответствующие столбцы таблицы.
 
 
-Подробное описание в файле "[04-PostgreSQL-SQLAlchemy-Filtering_by_substring/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/04-PostgreSQL-SQLAlchemy-Filtering_by_substring/readme.md)"
+Подробное описание в файле "[04-PostgreSQL-SQLAlchemy-Filtering_by_substring/readme.md](04-PostgreSQL-SQLAlchemy-Filtering_by_substring/readme.md)"
 
-Код размещён в папке "[04-PostgreSQL-SQLAlchemy-Filtering_by_substring](https://github.com/shilyas-ru/FastAPI_AS/tree/main/04-PostgreSQL-SQLAlchemy-Filtering_by_substring)"
+Код размещён в папке "[04-PostgreSQL-SQLAlchemy-Filtering_by_substring](04-PostgreSQL-SQLAlchemy-Filtering_by_substring)"
 
 
 
@@ -112,18 +112,18 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 где hotel — модель Алхимии, которую вернул репозиторий.
 
 
-Подробное описание в файле "[05-PostgreSQL-SQLAlchemy-Repository-Inserting_data/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/05-PostgreSQL-SQLAlchemy-Repository-Inserting_data/readme.md)"
+Подробное описание в файле "[05-PostgreSQL-SQLAlchemy-Repository-Inserting_data/readme.md](05-PostgreSQL-SQLAlchemy-Repository-Inserting_data/readme.md)"
 
-Код размещён в папке "[05-PostgreSQL-SQLAlchemy-Repository-Inserting_data](https://github.com/shilyas-ru/FastAPI_AS/tree/main/05-PostgreSQL-SQLAlchemy-Repository-Inserting_data)"
+Код размещён в папке "[05-PostgreSQL-SQLAlchemy-Repository-Inserting_data](05-PostgreSQL-SQLAlchemy-Repository-Inserting_data)"
 
 
 
 ## Задание №6: Обновление и удаление данных через репозиторий
 
-Необходимо создать 2 метода внутри BaseRepository по заданным сигнатурам (см. [скриншот](https://github.com/shilyas-ru/FastAPI_AS/blob/main/06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/Screenshot_at_Aug_28_23-35-20.png)), а также переписать ручки PUT и DELETE.
+Необходимо создать 2 метода внутри BaseRepository по заданным сигнатурам (см. [скриншот](06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/Screenshot_at_Aug_28_23-35-20.png)), а также переписать ручки PUT и DELETE.
 
 ***Скриншот:***<br>
-<img src="https://github.com/shilyas-ru/FastAPI_AS/blob/main/06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/Screenshot_at_Aug_28_23-35-20.png" alt="скриншот" height="135">
+<img src="06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/Screenshot_at_Aug_28_23-35-20.png" alt="скриншот" height="135">
 
 Не нужно переписывать PATCH ручку!
 
@@ -137,7 +137,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 - со статусом 404 в случае, если объект не найден;
 - 400 или 422, если объектов больше одного.
 
-*Код со [скриншота](https://github.com/shilyas-ru/FastAPI_AS/blob/main/06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/Screenshot_at_Aug_28_23-35-20.png):*
+*Код со [скриншота](06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/Screenshot_at_Aug_28_23-35-20.png):*
 ```
 async def edit(self, data: BaseModel, **filter_by) -> None:
     ...
@@ -147,10 +147,10 @@ async def delete(self, **filter_by) -> None:
 ```
 
 
-Подробное описание в файле "[06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/readme.md)"
+Подробное описание в файле "[06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/readme.md](06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data/readme.md)"
 
 
-Код размещён в папке "[06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data](https://github.com/shilyas-ru/FastAPI_AS/tree/main/06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data)"
+Код размещён в папке "[06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data](06-PostgreSQL-SQLAlchemy-Repository-Updating_Deleting_data)"
 
 
 
@@ -159,17 +159,17 @@ async def delete(self, **filter_by) -> None:
 Необходимо создать ручку для получения конкретного отеля `GET /hotels/{hotel_id}`, которая будет вызывать соответствующий метод репозитория и отдавать в ответе данные отеля.
 
 
-Подробное описание в файле "[07-PostgreSQL-SQLAlchemy-Repository-Getting_data/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/07-PostgreSQL-SQLAlchemy-Repository-Getting_data/readme.md)"
+Подробное описание в файле "[07-PostgreSQL-SQLAlchemy-Repository-Getting_data/readme.md](07-PostgreSQL-SQLAlchemy-Repository-Getting_data/readme.md)"
 
-Код размещён в папке "[07-PostgreSQL-SQLAlchemy-Repository-Getting_data](https://github.com/shilyas-ru/FastAPI_AS/tree/main/07-PostgreSQL-SQLAlchemy-Repository-Getting_data)"
+Код размещён в папке "[07-PostgreSQL-SQLAlchemy-Repository-Getting_data](07-PostgreSQL-SQLAlchemy-Repository-Getting_data)"
 
 
 
 ## Применение паттерна DataMapper
-Подробное описание в файле "[08-PostgreSQL-SQLAlchemy-Repository-DataMapper/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/08-PostgreSQL-SQLAlchemy-Repository-DataMapper/readme.md)"
+Подробное описание в файле "[08-PostgreSQL-SQLAlchemy-Repository-DataMapper/readme.md](08-PostgreSQL-SQLAlchemy-Repository-DataMapper/readme.md)"
 
 
-Код размещён в папке "[08-PostgreSQL-SQLAlchemy-Repository-DataMapper](https://github.com/shilyas-ru/FastAPI_AS/tree/main/08-PostgreSQL-SQLAlchemy-Repository-DataMapper)"
+Код размещён в папке "[08-PostgreSQL-SQLAlchemy-Repository-DataMapper](08-PostgreSQL-SQLAlchemy-Repository-DataMapper)"
 
 
 
@@ -183,10 +183,10 @@ async def delete(self, **filter_by) -> None:
 чтобы не пришлось дописывать дополнительную бизнес-логику внутри ручки 
 или репозитория.
 
-Подробное описание в файле "[09-User_authorization_and_authentication-User_registration/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/09-User_authorization_and_authentication-User_registration/readme.md)"
+Подробное описание в файле "[09-User_authorization_and_authentication-User_registration/readme.md](09-User_authorization_and_authentication-User_registration/readme.md)"
 
 
-Код размещён в папке "[09-User_authorization_and_authentication-User_registration](https://github.com/shilyas-ru/FastAPI_AS/tree/main/09-User_authorization_and_authentication-User_registration)"
+Код размещён в папке "[09-User_authorization_and_authentication-User_registration](09-User_authorization_and_authentication-User_registration)"
 
 
 
@@ -194,13 +194,13 @@ async def delete(self, **filter_by) -> None:
 
 Необходимо реализовать получение токена access_token из cookie пользователя, которые отправляет браузер. Внутри cookie может либо находится наш токен, либо будет пусто (если юзер не аутентифицирован).
 
-Цель задания — открыть для себя мир исходного кода библиотек, с которыми вы работаете. Взглянуть на код, который пишут продвинутые Python разработчики (см. [скриншот](https://github.com/shilyas-ru/FastAPI_AS/blob/main/10-User_authorization_and_authentication-Receiving_user_cookies/Screenshot_at_Aug_28_23-55-56.png)), а также переписать ручки PUT и DELETE.
+Цель задания — открыть для себя мир исходного кода библиотек, с которыми вы работаете. Взглянуть на код, который пишут продвинутые Python разработчики (см. [скриншот](10-User_authorization_and_authentication-Receiving_user_cookies/Screenshot_at_Aug_28_23-55-56.png)), а также переписать ручки PUT и DELETE.
 
 ***Скриншот:***<br>
-<img src="https://github.com/shilyas-ru/FastAPI_AS/blob/main/10-User_authorization_and_authentication-Receiving_user_cookies/Screenshot_at_Aug_28_23-55-56.png" alt="скриншот" height="135">
+<img src="10-User_authorization_and_authentication-Receiving_user_cookies/Screenshot_at_Aug_28_23-55-56.png" alt="скриншот" height="135">
 
 
-*Код со [скриншота](https://github.com/shilyas-ru/FastAPI_AS/blob/main/10-User_authorization_and_authentication-Receiving_user_cookies/Screenshot_at_Aug_28_23-55-56.png):*
+*Код со [скриншота](10-User_authorization_and_authentication-Receiving_user_cookies/Screenshot_at_Aug_28_23-55-56.png):*
 ```
 @router.get("/only_auth")
 async def only_auth(
@@ -210,10 +210,10 @@ async def only_auth(
     access_token = "..." or None
 ```
 
-Подробное описание в файле "[10-User_authorization_and_authentication-Receiving_user_cookies/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/10-User_authorization_and_authentication-Receiving_user_cookies/readme.md)"
+Подробное описание в файле "[10-User_authorization_and_authentication-Receiving_user_cookies/readme.md](10-User_authorization_and_authentication-Receiving_user_cookies/readme.md)"
 
 
-Код размещён в папке "[10-User_authorization_and_authentication-Receiving_user_cookies](https://github.com/shilyas-ru/FastAPI_AS/tree/main/10-User_authorization_and_authentication-Receiving_user_cookies)"
+Код размещён в папке "[10-User_authorization_and_authentication-Receiving_user_cookies](10-User_authorization_and_authentication-Receiving_user_cookies)"
 
 
 
@@ -228,16 +228,16 @@ async def only_auth(
 какой HTTP метод стоит использовать для этой операции — GET, 
 POST, PUT, PATCH или DELETE.
 
-Подробное описание в файле "[11-User_authorization_and_authentication-Getting_user_and_Logging_out/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/11-User_authorization_and_authentication-Getting_user_and_Logging_out/readme.md)"
+Подробное описание в файле "[11-User_authorization_and_authentication-Getting_user_and_Logging_out/readme.md](11-User_authorization_and_authentication-Getting_user_and_Logging_out/readme.md)"
 
 
-Код размещён в папке "[11-User_authorization_and_authentication-Getting_user_and_Logging_out](https://github.com/shilyas-ru/FastAPI_AS/tree/main/11-User_authorization_and_authentication-Getting_user_and_Logging_out)"
+Код размещён в папке "[11-User_authorization_and_authentication-Getting_user_and_Logging_out](11-User_authorization_and_authentication-Getting_user_and_Logging_out)"
 
 
 
 ## Задание №11: Функционал номеров
 Необходимо создать API ручки для взаимодействия с номерами. По сути, 
-нужны все те же самые ручки, что мы делали для отелей (см. [скриншот](https://github.com/shilyas-ru/FastAPI_AS/blob/main/12-Database-Rooms_functionality/Screenshot_at_Aug_29_01-19-03.png)).
+нужны все те же самые ручки, что мы делали для отелей (см. [скриншот](12-Database-Rooms_functionality/Screenshot_at_Aug_29_01-19-03.png)).
 
 Для этого нужны создать:
 - роутер и ручки
@@ -259,10 +259,10 @@ POST, PUT, PATCH или DELETE.
 
 
 ***Скриншот:***<br>
-<img src="https://github.com/shilyas-ru/FastAPI_AS/blob/main/12-Database-Rooms_functionality/Screenshot_at_Aug_29_01-19-03.png" alt="скриншот" height="270">
+<img src="12-Database-Rooms_functionality/Screenshot_at_Aug_29_01-19-03.png" alt="скриншот" height="270">
 
 
-*Код со [скриншота](https://github.com/shilyas-ru/FastAPI_AS/blob/main/12-Database-Rooms_functionality/Screenshot_at_Aug_29_01-19-03.png):*
+*Код со [скриншота](12-Database-Rooms_functionality/Screenshot_at_Aug_29_01-19-03.png):*
 ```
 get("/hotels") - Get Hotels
 post("/hotels") - Create Hotels
@@ -272,10 +272,10 @@ patch("/hotels/{hotel_id}") - Частичное обновление данны
 delete("/hotels/{hotel_id}") - Delete Hotel
 ```
 
-Подробное описание в файле "[12-Database-Rooms_functionality/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/12-Database-Rooms_functionality/readme.md)"
+Подробное описание в файле "[12-Database-Rooms_functionality/readme.md](12-Database-Rooms_functionality/readme.md)"
 
 
-Код размещён в папке "[12-Database-Rooms_functionality](https://github.com/shilyas-ru/FastAPI_AS/tree/main/12-Database-Rooms_functionality)"
+Код размещён в папке "[12-Database-Rooms_functionality](12-Database-Rooms_functionality)"
 
 
 
@@ -306,10 +306,10 @@ delete("/hotels/{hotel_id}") - Delete Hotel
 И затем уже перегонять данные в другую pydantic-схему.
 
 
-Подробное описание в файле "[13-Database-Rooms_functionality-Adding_booking_room/readme.md](https://github.com/shilyas-ru/FastAPI_AS/blob/main/13-Database-Rooms_functionality-Adding_booking_room/readme.md)"
+Подробное описание в файле "[13-Database-Rooms_functionality-Adding_booking_room/readme.md](13-Database-Rooms_functionality-Adding_booking_room/readme.md)"
 
 
-Код размещён в папке "[13-Database-Rooms_functionality-Adding_booking_room](https://github.com/shilyas-ru/FastAPI_AS/tree/main/13-Database-Rooms_functionality-Adding_booking_room)"
+Код размещён в папке "[13-Database-Rooms_functionality-Adding_booking_room](13-Database-Rooms_functionality-Adding_booking_room)"
 
 
 
@@ -320,7 +320,7 @@ delete("/hotels/{hotel_id}") - Delete Hotel
 - Получение только своих бронирований /bookings/me
 
 
-Код размещён в папке "[14-Database-Rooms_functionality-Getting_booking_room](https://github.com/shilyas-ru/FastAPI_AS/tree/main/14-Database-Rooms_functionality-Getting_booking_room)"
+Код размещён в папке "[14-Database-Rooms_functionality-Getting_booking_room](14-Database-Rooms_functionality-Getting_booking_room)"
 
 
 
@@ -331,5 +331,20 @@ delete("/hotels/{hotel_id}") - Delete Hotel
 Метод get_all в HotelsRepository необходимо удалить.
 
 
-Код размещён в папке "[15-Database-Rooms_functionality-Raw_SQL_queries](https://github.com/shilyas-ru/FastAPI_AS/tree/main/15-Database-Rooms_functionality-Raw_SQL_queries)"
+Код размещён в папке "[15-Database-Rooms_functionality-Raw_SQL_queries](15-Database-Rooms_functionality-Raw_SQL_queries)"
+
+
+
+## Задание № 15: Получение и добавление удобств
+Необходимо добавить роутер для удобств и две ручки:
+
+    GET /facilities на получение всех удобств
+    POST /facilities для добавления нового удобства
+
+Обратите внимание, что пока мы не используем m2m таблицу. 
+Она пригодится нам позже.
+
+
+Код размещён в папке "[16-Database-Rooms_functionality-Adding_facilities-Many_to_many_relationship](16-Database-Rooms_functionality-Adding_facilities-Many_to_many_relationship)"
+
 
