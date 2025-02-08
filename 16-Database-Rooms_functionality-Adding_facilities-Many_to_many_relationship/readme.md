@@ -30,59 +30,40 @@ ACCESS_TOKEN_EXPIRE_MINUTES=
 
 К заданию № 14: Вернуть пагинацию и фильтрацию в получение отелей (см. папку "[15-Database-Rooms_functionality-Raw_SQL_queries](../15-Database-Rooms_functionality-Raw_SQL_queries)"):
 
-- Добавляем удобства (facilities) - это то, что предлагается в номере:
-    - Создаём две таблицы в БД: facilities и rooms_facilities 
-      (таблица many-to-many).<br>
-      Для этого:
-        - В папке с моделями (src\models) создаём файл с моделями facilities.py. 
-          Создали модели:
-            - class FacilitiesORM(Base).
-            - class RoomsFacilitiesORM(Base).
-        - Заходим в миграции (файл src\migration\env.py), импортируем какой-либо
-          класс из файла с новой моделью (src\models\facilities.py).
-        - Прогоняем миграции: 
-          alembic revision --autogenerate -m "006 Add facilities"
-          Создан файл: 2025_02_07_0117-d63318ef9cad_006_add_facilities.py
-        - Применяем все не обработанные миграции: alembic upgrade head
-    - Реализуем две ручки для работы с удобствами (работаем с сущностью 
-      FacilitiesORM из файла src\models\facilities.py): Получать список
-      удобств и добавлять новое удобство.
-      Для этого:
-        - Делаем роутер. Создаём файл src\api\routers\facilities.py для 
-          размещения кода для end-point'ов.
-            - Делаем переменную с примерами: openapi_examples_dict
-            - Делаем метод для создания удобств: create_facility_post
-            - Делаем метод для вывода списка удобств: 
-              show_facilities_in_rooms_get
-        - Делаем Pydantic-схемы. Создаём файл src\schemas\facilities.py для 
-          схем. В нём создаём нужные схемы:
-            - class FacilityDescriptionRecURL(BaseModel).
-            - class FacilityBase(BaseModel).
-            - class FacilityPydanticSchema(FacilityBase).
-        - Делаем репозиторий. Создаём файл src\repositories\facilities.py, 
-          создаём:
-            - Создали класс class FacilitiesRepository(BaseRepository) с 
-              атрибутами:
-                - model = FacilitiesORM.
-                - schema = FacilityPydanticSchema.
-            - Создали метод класса:
-                - get_limit.
-        - Добавляем в src\utils\db_manager.py:
-            - Добавляем импорт: 
-              from src.repositories.facilities import FacilitiesRepository.
-            - В методе `async def __aenter__` добавляем: 
-              self.facilities = FacilitiesRepository(self.session).
-        - Редактируем файл src\main.py:
-            - Добавляем импорт: 
-              from src.api.routers.facilities import router as router_facilities.
-            - Редактируем переменную openapi_tags - определяя параметры и 
-              порядок вывода в документации.
-            - Добавляем роутер: app.include_router(router_facilities).
-    - Косметическая правка. В файле src\api\dependencies\dependencies.py 
-      в классе PaginationPagesAllParams заменил наименование атрибута. 
-      Обусловлено тем, что объекты для вывода сейчас не только отели.
-        - Было: PaginationPagesAllParams.all_hotels.
-        - Стало: PaginationPagesAllParams.all_objects.
+- Добавлено:
+    - В базовом репозитории BaseRepositoryMyCode добавлен метод delete_id. Метод класса. Выбирает по идентификатору 
+      (по первичному ключу) - поле self.model.id один объект в базе, используя метод get, удаляет методом session.delete.<br>
+      Используются методы:
+        - session.get(RoomsORM, object_id) для получения объекта по ключу
+        - session.delete(room_object) для удаления объекта room_object.
+        
+    - Сделан репозитарий RoomsRepositoryMyCode, дочерний к базовому репозитарию BaseRepositoryMyCode (см. файл "[src/repositories/rooms.py](src/repositories/rooms.py)").
+
+    - Сделана обработка эндпоинтов для номеров (см. файл "[src/api/routers/rooms.py](src/api/routers/rooms.py)").
+
+
+Рабочие ссылки (список методов, параметры в подробном перечне):
+- post("/hotels/room") - Создание записи с новой комнатой в отеле.
+- get("/hotels/{hotel_id}/rooms") - Вывод списка номеров для конкретного 
+        отеля - весь список полностью.
+- get("/hotels/rooms/{room_id}") - Получение из базы данных выбранной 
+        записи по идентификатору отеля.
+- delete("/hotels/rooms/{room_id}") - Удаление выбранной записи по 
+        идентификатору номера.
+        Реализовано удаление одного объекта, когда объект для удаления получаем 
+        по первичному ключу (метод session.get), удаляем методом session.delete.<br>
+        Используются методы:
+    - session.get(RoomsORM, id) для получения объекта по ключу
+    - session.delete(room_object) для удаления объекта room_object.
+- delete("/hotels/rooms/") - Удаление выбранной записи по 
+        идентификатору номера.
+        При желании можно дополнить удаление по любым условиям, а не только по id.
+        Удаление выбранных записей реализовано через метод delete.
+- put("/hotels/rooms/{room_id}") - Обновление ВСЕХ данных одновременно 
+        для выбранной записи, выборка происходит по идентификатору номера.
+- patch("/hotels/rooms/{room_id}") - Обновление каких-либо данных выборочно 
+        или всех данных сразу для выбранной записи, выборка происходит по 
+        идентификатору номера.
 
 
 
